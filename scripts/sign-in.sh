@@ -1,5 +1,5 @@
-EMAIL=1@gmail.com
-PASSWORD=1
+EMAIL=4@gmail.com
+PASSWORD=4
 
 API="${API_ORIGIN:-http://localhost:4741}"
 URL_PATH="/sign-in"

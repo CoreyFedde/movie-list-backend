@@ -1,6 +1,8 @@
-TOKEN="BAhJIiUzZGFlMjAyNWM4YWVhN2QxY2RkY2VkOWFmN2MyYjE2YwY6BkVG--7c81fc7fc4f6553f83a39a8a50325045a2e45723"
+TOKEN="BAhJIiVjNjAzZDgwZGVjMGQ2M2MwMDA5ODdhNmZjY2U1NmQyNgY6BkVG--b8253963fe37f8b24aa4df8524dea4078ffe6642"
 TITLE="TestTitle2"
 NOTES="TestNotes2"
+GENRES="Comedy"
+WATCHED="Yes"
 
 curl --include --request POST http://localhost:4741/movies \
   --header "Content-Type: application/json" \
@@ -8,6 +10,8 @@ curl --include --request POST http://localhost:4741/movies \
   --data '{
     "movie": {
       "title": "'"${TITLE}"'",
-      "notes": "'"${NOTES}"'"
+      "notes": "'"${NOTES}"'",
+      "genres": "'"${GENRE}"'",
+      "watched": "'"${WATCHED}"'"
     }
   }'
