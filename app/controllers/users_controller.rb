@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+# CHANGE BACK TO PROTECTED CONTROLLER ONCE DONE
 class UsersController < ProtectedController
   skip_before_action :authenticate, only: [:signup, :signin]
 
